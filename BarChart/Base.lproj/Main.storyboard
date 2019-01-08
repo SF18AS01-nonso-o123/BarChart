@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BarChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhI-au-xDj">
+                                <rect key="frame" x="40" y="286" width="295" height="126"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="vzc-Hb-2LT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOa-l6-Qd5">
+                                <rect key="frame" x="40" y="160" width="295" height="118"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="tuh-o3-ZPw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Points Bar Chart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhu-J9-laj">
+                                <rect key="frame" x="40" y="41" width="295" height="43"/>
+                                <color key="backgroundColor" red="0.73456228595890416" green="0.30816566780821919" blue="0.24824183158678551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter points for score 1" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="joK-qh-MFB">
+                                <rect key="frame" x="102" y="420" width="171" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-AV-TO4">
+                                <rect key="frame" x="124" y="458" width="126" height="30"/>
+                                <color key="backgroundColor" red="0.73367506265640259" green="0.30693095922470093" blue="0.25094592571258545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButton:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="AiB-Hx-bhu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyA-ef-vPy">
+                                <rect key="frame" x="40" y="105" width="295" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Fch-y8-XM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.73367506265640259" green="0.30693095922470093" blue="0.25094592571258545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="03P-45-3cr"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="trailing" secondItem="Qhu-J9-laj" secondAttribute="trailing" id="2cV-vB-Yxo"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="top" secondItem="Qhu-J9-laj" secondAttribute="bottom" constant="21" id="4eh-tK-dQY"/>
+                            <constraint firstItem="iUb-AV-TO4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="5pZ-2m-Ce6"/>
+                            <constraint firstItem="joK-qh-MFB" firstAttribute="top" secondItem="fhI-au-xDj" secondAttribute="bottom" constant="8" symbolic="YES" id="H3l-wK-egW"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="leading" secondItem="fhI-au-xDj" secondAttribute="leading" id="K0t-gq-wzs"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="trailing" secondItem="fhI-au-xDj" secondAttribute="trailing" id="NJA-fp-LSc"/>
+                            <constraint firstItem="fhI-au-xDj" firstAttribute="top" secondItem="FOa-l6-Qd5" secondAttribute="bottom" constant="8" symbolic="YES" id="QVj-se-5OL"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="leading" secondItem="Qhu-J9-laj" secondAttribute="leading" id="aNu-Gh-U2Y"/>
+                            <constraint firstItem="FOa-l6-Qd5" firstAttribute="top" secondItem="nyA-ef-vPy" secondAttribute="bottom" constant="8" symbolic="YES" id="dpZ-Yr-Iho"/>
+                            <constraint firstItem="iUb-AV-TO4" firstAttribute="top" secondItem="joK-qh-MFB" secondAttribute="bottom" constant="8" symbolic="YES" id="ewH-yL-gGZ"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="trailing" secondItem="FOa-l6-Qd5" secondAttribute="trailing" id="jl1-6i-f1D"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="leading" secondItem="FOa-l6-Qd5" secondAttribute="leading" id="t1Y-8l-kRg"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="centerX" secondItem="iUb-AV-TO4" secondAttribute="centerX" id="tL8-ew-4RZ"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="105" id="tfQ-Oi-ahW"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tpd-Me-G65"/>
+                            <constraint firstItem="nyA-ef-vPy" firstAttribute="centerX" secondItem="joK-qh-MFB" secondAttribute="centerX" id="uWK-NX-9UL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="barView" destination="fhI-au-xDj" id="n6d-qA-gIA"/>
+                        <outlet property="headingLabel" destination="Qhu-J9-laj" id="aP2-Um-YQ5"/>
+                        <outlet property="inputTextField" destination="joK-qh-MFB" id="euz-Hm-gu6"/>
+                        <outlet property="instructionLabel" destination="nyA-ef-vPy" id="Ake-n6-e8Y"/>
+                        <outlet property="reportView" destination="FOa-l6-Qd5" id="h6d-DA-YdG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
